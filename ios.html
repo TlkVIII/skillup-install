@@ -9,8 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="assets/logo-skillup.png">
-  <link rel="apple-touch-icon" href="assets/logo-skillup.png">
 </head>
 <body>
   <div class="page-noise"></div>
@@ -61,8 +59,8 @@
             </a>
 
             <a class="button button-ipa" href="files/SkillUp-unsigned.ipa" download>
-              <span class="button-icon"></span>
-              Télécharger l’IPA
+              <span class="button-icon apple-mark"></span>
+              SkillUp fichier IPA
             </a>
 
             <a class="button button-ghost" href="#steps">Voir les étapes</a>
@@ -83,108 +81,246 @@
     </section>
 
 
-    <section class="section-shell prerequisites-section" id="prerequisites">
+
+    <section class="section-shell platform-guide-section" id="prerequisites">
       <div class="container">
-        <div class="prerequisites-card reveal">
-          <div class="prerequisites-copy">
-            <span class="eyebrow">AVANT DE COMMENCER</span>
-            <h2>Prépare ton PC Windows.</h2>
-            <p>
-              Sideloadly a besoin des versions web d’iTunes et d’iCloud sur Windows
-              pour communiquer correctement avec ton iPhone.
-            </p>
+        <div class="section-heading reveal">
+          <span class="eyebrow">AVANT DE COMMENCER</span>
+          <h2>Choisis ton ordinateur.</h2>
+          <p>
+            La procédure change légèrement entre Windows et Mac.
+            Sélectionne ton système pour afficher uniquement les étapes qui te concernent.
+          </p>
+        </div>
+
+        <div class="platform-switch reveal" role="tablist" aria-label="Choisir le système">
+          <button class="platform-tab active" type="button" data-platform-tab="windows" role="tab" aria-selected="true">
+            <span class="platform-tab-icon">▦</span>
+            <span>
+              <strong>Windows</strong>
+              <small>iTunes + iCloud + Sideloadly</small>
+            </span>
+          </button>
+
+          <button class="platform-tab" type="button" data-platform-tab="mac" role="tab" aria-selected="false">
+            <span class="platform-tab-icon apple-mark"></span>
+            <span>
+              <strong>Mac</strong>
+              <small>Sideloadly directement</small>
+            </span>
+          </button>
+        </div>
+
+        <div class="platform-panel active" data-platform-panel="windows">
+          <div class="platform-summary reveal">
+            <div>
+              <span class="eyebrow">WINDOWS</span>
+              <h3>Prépare Windows avant d’installer SkillUp.</h3>
+              <p>
+                Sur Windows, Sideloadly a besoin des composants Apple pour communiquer
+                correctement avec l’iPhone.
+              </p>
+            </div>
+
+            <div class="platform-requirements">
+              <div class="requirement">
+                <span class="requirement-icon">✓</span>
+                <div>
+                  <strong>iTunes — version web</strong>
+                  <small>Évite la version Microsoft Store.</small>
+                </div>
+              </div>
+
+              <div class="requirement">
+                <span class="requirement-icon">✓</span>
+                <div>
+                  <strong>iCloud — version web</strong>
+                  <small>Évite également la version Microsoft Store.</small>
+                </div>
+              </div>
+
+              <div class="requirement">
+                <span class="requirement-icon">✓</span>
+                <div>
+                  <strong>Sideloadly pour Windows</strong>
+                  <small>Installe ensuite Sideloadly normalement.</small>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="prerequisites-list">
-            <div class="requirement">
-              <span class="requirement-icon">✓</span>
+          <div class="steps-list platform-steps" id="steps">
+            <article class="install-step reveal">
+              <span class="install-number">01</span>
               <div>
-                <strong>iTunes — version web</strong>
-                <small>Évite la version Microsoft Store.</small>
+                <h3>Installe iTunes et iCloud</h3>
+                <p>
+                  Installe les versions web d’iTunes et d’iCloud, puis redémarre Windows
+                  si l’installation le demande.
+                </p>
               </div>
+            </article>
+
+            <article class="install-step reveal">
+              <span class="install-number">02</span>
+              <div>
+                <h3>Installe Sideloadly</h3>
+                <p>Télécharge Sideloadly pour Windows depuis son site officiel et lance-le.</p>
+              </div>
+            </article>
+
+            <article class="install-step reveal">
+              <span class="install-number">03</span>
+              <div>
+                <h3>Télécharge SkillUp fichier IPA</h3>
+                <p>
+                  Utilise le bouton « SkillUp fichier IPA » en haut de cette page,
+                  puis glisse le fichier téléchargé dans Sideloadly.
+                </p>
+              </div>
+            </article>
+
+            <article class="install-step reveal">
+              <span class="install-number">04</span>
+              <div>
+                <h3>Branche ton iPhone</h3>
+                <p>
+                  Déverrouille l’iPhone, branche-le en USB et accepte
+                  « Faire confiance à cet ordinateur » si le message apparaît.
+                </p>
+              </div>
+            </article>
+
+            <article class="install-step reveal">
+              <span class="install-number">05</span>
+              <div>
+                <h3>Installe avec ton propre Apple ID</h3>
+                <p>
+                  Sélectionne ton iPhone dans Sideloadly, saisis ton propre identifiant Apple
+                  puis lance l’installation.
+                </p>
+              </div>
+            </article>
+
+            <article class="install-step reveal">
+              <span class="install-number">06</span>
+              <div>
+                <h3>Autorise SkillUp sur l’iPhone</h3>
+                <p>
+                  Va dans Réglages → Général → VPN et gestion de l’appareil,
+                  fais confiance au profil développeur, puis active le Mode développeur
+                  si iOS te le demande.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="platform-panel" data-platform-panel="mac">
+          <div class="platform-summary reveal">
+            <div>
+              <span class="eyebrow">MAC</span>
+              <h3>Sur Mac, la préparation est plus simple.</h3>
+              <p>
+                Sideloadly est disponible directement sur macOS. Tu n’as pas besoin
+                d’installer séparément iTunes et iCloud comme sur Windows.
+              </p>
             </div>
 
-            <div class="requirement">
-              <span class="requirement-icon">✓</span>
-              <div>
-                <strong>iCloud — version web</strong>
-                <small>Évite également la version Microsoft Store.</small>
+            <div class="platform-requirements">
+              <div class="requirement">
+                <span class="requirement-icon apple-mark"></span>
+                <div>
+                  <strong>Mac compatible</strong>
+                  <small>Sideloadly prend en charge macOS 10.12 ou version ultérieure.</small>
+                </div>
               </div>
-            </div>
 
-            <div class="requirement">
-              <span class="requirement-icon">✓</span>
-              <div>
-                <strong>iPhone reconnu par Windows</strong>
-                <small>Branche-le en USB et accepte « Faire confiance ».</small>
+              <div class="requirement">
+                <span class="requirement-icon">✓</span>
+                <div>
+                  <strong>Sideloadly pour macOS</strong>
+                  <small>Télécharge simplement la version Mac.</small>
+                </div>
+              </div>
+
+              <div class="requirement">
+                <span class="requirement-icon">✓</span>
+                <div>
+                  <strong>Ton propre Apple ID</strong>
+                  <small>Un compte Apple gratuit peut être utilisé.</small>
+                </div>
               </div>
             </div>
           </div>
 
-          <a class="button button-ghost prerequisites-link"
+          <div class="steps-list platform-steps">
+            <article class="install-step reveal">
+              <span class="install-number">01</span>
+              <div>
+                <h3>Installe Sideloadly sur ton Mac</h3>
+                <p>
+                  Télécharge la version macOS de Sideloadly depuis son site officiel,
+                  puis ouvre l’application.
+                </p>
+              </div>
+            </article>
+
+            <article class="install-step reveal">
+              <span class="install-number">02</span>
+              <div>
+                <h3>Télécharge SkillUp fichier IPA</h3>
+                <p>
+                  Clique sur le bouton « SkillUp fichier IPA » en haut de la page,
+                  puis glisse le fichier IPA directement dans Sideloadly.
+                </p>
+              </div>
+            </article>
+
+            <article class="install-step reveal">
+              <span class="install-number">03</span>
+              <div>
+                <h3>Branche ton iPhone au Mac</h3>
+                <p>
+                  Déverrouille l’iPhone, connecte-le en USB et accepte
+                  « Faire confiance » si iOS ou macOS te le demande.
+                </p>
+              </div>
+            </article>
+
+            <article class="install-step reveal">
+              <span class="install-number">04</span>
+              <div>
+                <h3>Choisis ton iPhone et ton Apple ID</h3>
+                <p>
+                  Dans Sideloadly, sélectionne l’iPhone, utilise ton propre identifiant Apple
+                  puis lance l’installation de SkillUp.
+                </p>
+              </div>
+            </article>
+
+            <article class="install-step reveal">
+              <span class="install-number">05</span>
+              <div>
+                <h3>Autorise SkillUp sur l’iPhone</h3>
+                <p>
+                  Dans Réglages → Général → VPN et gestion de l’appareil,
+                  fais confiance à ton profil développeur. Active aussi le Mode développeur
+                  si l’iPhone te le demande.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="platform-download reveal">
+          <a class="button button-primary"
              href="https://sideloadly.io/"
              target="_blank"
              rel="noopener noreferrer">
-            Ouvrir les téléchargements officiels Sideloadly
+            <span class="button-icon">⚡</span>
+            Télécharger Sideloadly
           </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-shell" id="steps">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="eyebrow">INSTALLATION</span>
-          <h2>Une seule configuration initiale.</h2>
-          <p>Ensuite, le rafraîchissement peut être automatisé lorsque ton PC et ton iPhone communiquent.</p>
-        </div>
-
-        <div class="steps-list">
-          <article class="install-step reveal">
-            <span class="install-number">01</span>
-            <div>
-              <h3>Installe Sideloadly sur Windows</h3>
-              <p>Télécharge Sideloadly depuis son site officiel puis termine l'installation.</p>
-            </div>
-          </article>
-
-          <article class="install-step reveal">
-            <span class="install-number">02</span>
-            <div>
-              <h3>Branche et autorise ton iPhone</h3>
-              <p>Déverrouille l'iPhone, branche-le en USB et accepte « Faire confiance à cet ordinateur ».</p>
-            </div>
-          </article>
-
-          <article class="install-step reveal">
-            <span class="install-number">03</span>
-            <div>
-              <h3>Ajoute le fichier SkillUp IPA</h3>
-              <p>
-                Télécharge le fichier IPA fourni par l'administrateur du groupe,
-                glisse-le dans Sideloadly, choisis ton iPhone puis saisis ton propre identifiant Apple.
-              </p>
-            </div>
-          </article>
-
-          <article class="install-step reveal">
-            <span class="install-number">04</span>
-            <div>
-              <h3>Autorise l'application sur l'iPhone</h3>
-              <p>
-                Va dans Réglages → Général → VPN et gestion de l'appareil, puis fais confiance
-                au profil développeur associé à ton compte.
-              </p>
-            </div>
-          </article>
-
-          <article class="install-step reveal">
-            <span class="install-number">05</span>
-            <div>
-              <h3>Active le mode développeur si nécessaire</h3>
-              <p>Réglages → Confidentialité et sécurité → Mode développeur, puis redémarre si l'iPhone le demande.</p>
-            </div>
-          </article>
         </div>
       </div>
     </section>
@@ -196,15 +332,16 @@
             <span class="eyebrow">AUTO-REFRESH</span>
             <h2>Évite la réinstallation manuelle chaque semaine.</h2>
             <p>
-              Laisse le Sideloadly Daemon actif sur Windows et autorise son lancement au démarrage.
-              Lorsque le PC est allumé et que l'iPhone est détectable, Sideloadly peut renouveler la signature.
+              Active l’option de rafraîchissement automatique dans Sideloadly et laisse son service
+              d’auto-refresh actif sur Windows ou Mac. Lorsque l’ordinateur est allumé et que l’iPhone
+              est détectable, Sideloadly peut renouveler la signature.
             </p>
           </div>
           <div class="refresh-checks">
-            <span>✓ Daemon actif</span>
-            <span>✓ Lancement avec Windows</span>
+            <span>✓ Auto-refresh activé</span>
+            <span>✓ Service Sideloadly actif</span>
             <span>✓ Même réseau Wi‑Fi</span>
-            <span>✓ PC allumé régulièrement</span>
+            <span>✓ Ordinateur allumé régulièrement</span>
           </div>
         </div>
       </div>

@@ -76,3 +76,26 @@ backToTop.addEventListener('click', () => {
     behavior: reduceMotion ? 'auto' : 'smooth'
   });
 });
+
+
+// Guide iPhone : bascule Windows / Mac
+const platformTabs = document.querySelectorAll('[data-platform-tab]');
+const platformPanels = document.querySelectorAll('[data-platform-panel]');
+
+if (platformTabs.length && platformPanels.length) {
+  platformTabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      const target = tab.dataset.platformTab;
+
+      platformTabs.forEach((item) => {
+        const active = item === tab;
+        item.classList.toggle('active', active);
+        item.setAttribute('aria-selected', String(active));
+      });
+
+      platformPanels.forEach((panel) => {
+        panel.classList.toggle('active', panel.dataset.platformPanel === target);
+      });
+    });
+  });
+}
