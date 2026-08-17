@@ -1033,3 +1033,76 @@ body {
     border-bottom: 0;
   }
 }
+
+
+/* FIX CENTRAGE SECTION "TES STATISTIQUES" */
+
+@media (max-width: 900px) {
+    .home-page .showcase.alternate .showcase-grid.reverse {
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+  
+    .home-page .showcase.alternate .showcase-copy {
+      width: 100%;
+      max-width: 650px;
+      margin: 0 auto;
+      padding-left: 0;
+      padding-right: 0;
+      text-align: left;
+    }
+  
+    .home-page .showcase.alternate .screenshot-stage {
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+      justify-content: center;
+    }
+  
+    .home-page .showcase.alternate .stat-chips {
+      width: 100%;
+      max-width: 100%;
+      justify-content: flex-start;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .home-page .showcase.alternate {
+      width: 100%;
+      overflow: hidden;
+    }
+  
+    .home-page .showcase.alternate .container {
+      width: calc(100% - 28px);
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .home-page .showcase.alternate .showcase-copy {
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  
+    .home-page .showcase.alternate .showcase-copy h2,
+    .home-page .showcase.alternate .showcase-copy > p,
+    .home-page .showcase.alternate .eyebrow {
+      max-width: 100%;
+    }
+  
+    .home-page .showcase.alternate .stat-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+  }
+  
+  @media (max-width: 380px) {
+    .home-page .showcase.alternate .container {
+      width: calc(100% - 20px);
+    }
+  }
