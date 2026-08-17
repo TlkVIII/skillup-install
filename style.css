@@ -1295,3 +1295,150 @@ body {
       width: 210px;
     }
   }
+
+
+
+
+/* =====================================================
+   FIX SHOWCASE RESPONSIVE — TABLEAU + STATISTIQUES
+   ===================================================== */
+
+   @media (max-width: 1100px) {
+
+    /* Les 2 sections ont exactement la même structure mobile */
+    .home-page .showcase .showcase-grid,
+    .home-page .showcase .showcase-grid.reverse {
+      display: flex !important;
+      flex-direction: column !important;
+  
+      width: 100% !important;
+      max-width: 100% !important;
+  
+      margin: 0 auto !important;
+      padding: 0 !important;
+  
+      gap: 36px !important;
+    }
+  
+    /* Texte toujours en premier */
+    .home-page .showcase .showcase-copy,
+    .home-page .showcase.alternate .showcase-copy {
+      order: 1 !important;
+  
+      width: 100% !important;
+      max-width: 100% !important;
+  
+      margin: 0 !important;
+      padding: 0 !important;
+  
+      left: auto !important;
+      right: auto !important;
+      transform: none !important;
+    }
+  
+    /* Téléphone toujours en dessous */
+    .home-page .showcase .screenshot-stage,
+    .home-page .showcase.alternate .screenshot-stage {
+      order: 2 !important;
+  
+      width: 100% !important;
+      max-width: 100% !important;
+  
+      margin: 0 auto !important;
+  
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+  
+      overflow: hidden !important;
+    }
+  
+    /* Même container pour les deux sections */
+    .home-page .showcase > .container {
+      width: min(100% - 40px, 1180px) !important;
+      max-width: 100% !important;
+  
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+  
+    /* Les badges ne doivent jamais forcer la largeur */
+    .home-page .stat-chips {
+      width: 100% !important;
+      max-width: 100% !important;
+  
+      display: flex !important;
+      flex-wrap: wrap !important;
+  
+      justify-content: flex-start !important;
+    }
+  }
+  
+  
+  /* MOBILE */
+  @media (max-width: 600px) {
+  
+    .home-page .showcase > .container {
+      width: calc(100% - 28px) !important;
+    }
+  
+    .home-page .showcase .showcase-copy {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+  
+    .home-page .showcase .showcase-copy h2 {
+      width: 100% !important;
+      max-width: 100% !important;
+  
+      font-size: clamp(2.35rem, 10.5vw, 3.4rem) !important;
+      line-height: 1.02 !important;
+  
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+  
+    .home-page .showcase .showcase-copy > p {
+      width: 100% !important;
+      max-width: 100% !important;
+  
+      font-size: 0.96rem !important;
+      line-height: 1.7 !important;
+    }
+  
+    /* Badges statistiques : 2 x 2 */
+    .home-page .showcase.alternate .stat-chips {
+      display: grid !important;
+      grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  
+      width: 100% !important;
+  
+      gap: 10px !important;
+    }
+  
+    .home-page .showcase.alternate .stat-chips span {
+      width: 100% !important;
+      min-width: 0 !important;
+  
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+  
+      padding: 12px 8px !important;
+  
+      white-space: nowrap !important;
+    }
+  
+    .home-page .showcase .screenshot-stage {
+      min-height: 490px !important;
+    }
+  
+    .home-page .showcase .phone-large {
+      width: 230px !important;
+      max-width: 68vw !important;
+  
+      height: auto !important;
+  
+      margin: 0 auto !important;
+    }
+  }
