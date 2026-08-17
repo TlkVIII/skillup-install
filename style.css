@@ -1300,145 +1300,150 @@ body {
 
 
 /* =====================================================
-   FIX SHOWCASE RESPONSIVE — TABLEAU + STATISTIQUES
+   STATISTIQUES — MÊME RESPONSIVE QUE TABLEAU DE BORD
    ===================================================== */
 
    @media (max-width: 1100px) {
 
-    /* Les 2 sections ont exactement la même structure mobile */
-    .home-page .showcase .showcase-grid,
-    .home-page .showcase .showcase-grid.reverse {
-      display: flex !important;
-      flex-direction: column !important;
+    .home-page .showcase.alternate .showcase-grid {
+      display: flex;
+      flex-direction: column;
   
-      width: 100% !important;
-      max-width: 100% !important;
+      width: 100%;
+      max-width: 100%;
   
-      margin: 0 auto !important;
-      padding: 0 !important;
-  
-      gap: 36px !important;
+      gap: 35px;
     }
   
-    /* Texte toujours en premier */
-    .home-page .showcase .showcase-copy,
     .home-page .showcase.alternate .showcase-copy {
-      order: 1 !important;
+      width: 100%;
+      max-width: 650px;
   
-      width: 100% !important;
-      max-width: 100% !important;
+      margin: 0;
   
-      margin: 0 !important;
-      padding: 0 !important;
-  
-      left: auto !important;
-      right: auto !important;
-      transform: none !important;
+      order: 1;
     }
   
-    /* Téléphone toujours en dessous */
-    .home-page .showcase .screenshot-stage,
     .home-page .showcase.alternate .screenshot-stage {
-      order: 2 !important;
+      width: 100%;
   
-      width: 100% !important;
-      max-width: 100% !important;
+      order: 2;
   
-      margin: 0 auto !important;
-  
-      display: flex !important;
-      justify-content: center !important;
-      align-items: center !important;
-  
-      overflow: hidden !important;
-    }
-  
-    /* Même container pour les deux sections */
-    .home-page .showcase > .container {
-      width: min(100% - 40px, 1180px) !important;
-      max-width: 100% !important;
-  
-      margin-left: auto !important;
-      margin-right: auto !important;
-    }
-  
-    /* Les badges ne doivent jamais forcer la largeur */
-    .home-page .stat-chips {
-      width: 100% !important;
-      max-width: 100% !important;
-  
-      display: flex !important;
-      flex-wrap: wrap !important;
-  
-      justify-content: flex-start !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
   
   
-  /* MOBILE */
   @media (max-width: 600px) {
   
-    .home-page .showcase > .container {
-      width: calc(100% - 28px) !important;
+    /* mêmes marges que tableau de bord */
+    .home-page .showcase.alternate > .container {
+      width: calc(100% - 28px);
+      margin: 0 auto;
     }
   
-    .home-page .showcase .showcase-copy {
-      width: 100% !important;
-      max-width: 100% !important;
+  
+    /* TEXTE */
+  
+    .home-page .showcase.alternate .showcase-copy {
+      width: 100%;
+      max-width: 100%;
     }
   
-    .home-page .showcase .showcase-copy h2 {
-      width: 100% !important;
-      max-width: 100% !important;
+    .home-page .showcase.alternate .eyebrow {
+      display: block;
   
-      font-size: clamp(2.35rem, 10.5vw, 3.4rem) !important;
-      line-height: 1.02 !important;
+      margin-bottom: 14px;
   
-      margin-left: 0 !important;
-      margin-right: 0 !important;
+      font-size: .67rem;
+      letter-spacing: .13em;
     }
   
-    .home-page .showcase .showcase-copy > p {
-      width: 100% !important;
-      max-width: 100% !important;
+    .home-page .showcase.alternate .showcase-copy h2 {
+      width: 100%;
+      max-width: 100%;
   
-      font-size: 0.96rem !important;
-      line-height: 1.7 !important;
+      margin: 0 0 24px;
+  
+      font-size: clamp(2.35rem, 10.5vw, 3.4rem);
+      line-height: 1.02;
+      letter-spacing: -.05em;
+  
+      overflow-wrap: normal;
+      word-break: normal;
     }
   
-    /* Badges statistiques : 2 x 2 */
+    .home-page .showcase.alternate .showcase-copy > p {
+      width: 100%;
+  
+      margin: 0;
+  
+      font-size: .96rem;
+      line-height: 1.7;
+  
+      color: #95a4c1;
+    }
+  
+  
+    /* BADGES */
+  
     .home-page .showcase.alternate .stat-chips {
-      display: grid !important;
-      grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+      display: grid;
   
-      width: 100% !important;
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
   
-      gap: 10px !important;
+      width: 100%;
+  
+      gap: 10px;
+  
+      margin-top: 28px;
     }
   
     .home-page .showcase.alternate .stat-chips span {
-      width: 100% !important;
-      min-width: 0 !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
   
-      display: flex !important;
-      align-items: center !important;
-      justify-content: center !important;
+      width: 100%;
+      min-width: 0;
+      min-height: 54px;
   
-      padding: 12px 8px !important;
+      padding: 12px 8px;
   
-      white-space: nowrap !important;
+      border-radius: 15px;
+  
+      font-size: .82rem;
+  
+      white-space: nowrap;
     }
   
-    .home-page .showcase .screenshot-stage {
-      min-height: 490px !important;
+  
+    /* TÉLÉPHONE */
+  
+    .home-page .showcase.alternate .screenshot-stage {
+      min-height: 480px;
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      overflow: hidden;
     }
   
-    .home-page .showcase .phone-large {
-      width: 230px !important;
-      max-width: 68vw !important;
+    .home-page .showcase.alternate .phone-large {
+      width: 230px;
+      max-width: 68vw;
   
-      height: auto !important;
+      height: auto;
   
-      margin: 0 auto !important;
+      margin: 0 auto;
+    }
+  
+    .home-page .showcase.alternate .screen-glow {
+      width: 250px;
+      height: 250px;
     }
   }
