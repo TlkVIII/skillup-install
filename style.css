@@ -1035,74 +1035,263 @@ body {
 }
 
 
-/* FIX CENTRAGE SECTION "TES STATISTIQUES" */
+/* =====================================================
+   FIX FINAL MOBILE — SECTION "TES STATISTIQUES"
+   Même cadrage que "TON TABLEAU DE BORD"
+   ===================================================== */
 
-@media (max-width: 900px) {
-    .home-page .showcase.alternate .showcase-grid.reverse {
-      width: 100%;
-      max-width: 100%;
-      margin: 0 auto;
-      grid-template-columns: 1fr;
-      justify-items: center;
-    }
-  
-    .home-page .showcase.alternate .showcase-copy {
-      width: 100%;
-      max-width: 650px;
-      margin: 0 auto;
-      padding-left: 0;
-      padding-right: 0;
-      text-align: left;
-    }
-  
-    .home-page .showcase.alternate .screenshot-stage {
-      width: 100%;
-      max-width: 100%;
-      margin: 0 auto;
-      justify-content: center;
-    }
-  
-    .home-page .showcase.alternate .stat-chips {
-      width: 100%;
-      max-width: 100%;
-      justify-content: flex-start;
-    }
-  }
-  
-  @media (max-width: 600px) {
+   @media (max-width: 900px) {
+
     .home-page .showcase.alternate {
       width: 100%;
+      max-width: 100%;
       overflow: hidden;
     }
   
     .home-page .showcase.alternate .container {
-      width: calc(100% - 28px);
+      width: calc(100% - 32px);
+      max-width: 1180px;
+  
+      margin-left: auto;
+      margin-right: auto;
+  
+      padding-left: 0;
+      padding-right: 0;
+    }
+  
+    /* On annule complètement le layout desktop reverse */
+    .home-page .showcase.alternate .showcase-grid.reverse {
+      display: flex;
+      flex-direction: column;
+  
+      width: 100%;
       max-width: 100%;
+  
+      gap: 35px;
+  
+      margin: 0 auto;
+      padding: 0;
+  
+      align-items: stretch;
+    }
+  
+    /* Texte en premier */
+    .home-page .showcase.alternate .showcase-copy {
+      order: 1;
+  
+      width: 100%;
+      max-width: 100%;
+  
+      margin: 0;
+      padding: 0;
+  
+      transform: none;
+    }
+  
+    /* Téléphone en dessous */
+    .home-page .showcase.alternate .screenshot-stage {
+      order: 2;
+  
+      width: 100%;
+      max-width: 100%;
+  
+      min-height: 560px;
+  
+      margin: 0;
+      padding: 0;
+  
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      overflow: hidden;
+    }
+  
+    /* Le téléphone reste parfaitement centré */
+    .home-page .showcase.alternate .phone-large {
+      width: 270px;
+      max-width: 70vw;
+  
+      height: auto;
+  
+      margin-left: auto;
+      margin-right: auto;
+  
+      transform: none;
+    }
+  
+    /* Glow derrière le téléphone */
+    .home-page .showcase.alternate .screen-glow {
+      left: 50%;
+      top: 50%;
+  
+      transform: translate(-50%, -50%);
+  
+      width: 320px;
+      height: 320px;
+  
+      max-width: 85vw;
+    }
+  }
+  
+  
+  /* =====================================================
+     MOBILE
+     ===================================================== */
+  
+  @media (max-width: 600px) {
+  
+    .home-page .showcase.alternate {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  
+    .home-page .showcase.alternate .container {
+      width: calc(100% - 28px);
+  
       margin-left: auto;
       margin-right: auto;
     }
   
+    .home-page .showcase.alternate .showcase-grid.reverse {
+      width: 100%;
+  
+      margin: 0 auto;
+  
+      gap: 28px;
+    }
+  
+  
+    /* ---------- TEXTE ---------- */
+  
     .home-page .showcase.alternate .showcase-copy {
       width: 100%;
+  
+      margin-left: auto;
+      margin-right: auto;
+  
+      text-align: left;
+    }
+  
+    .home-page .showcase.alternate .eyebrow {
+      display: block;
+  
+      width: 100%;
+  
+      margin-bottom: 13px;
+    }
+  
+    .home-page .showcase.alternate .showcase-copy h2 {
+      width: 100%;
       max-width: 100%;
+  
+      margin-left: 0;
+      margin-right: 0;
+  
+      font-size: clamp(2.6rem, 12vw, 4rem);
+      line-height: 0.98;
+      letter-spacing: -0.055em;
+  
+      overflow-wrap: normal;
+      word-break: normal;
+    }
+  
+    .home-page .showcase.alternate .showcase-copy > p {
+      width: 100%;
+      max-width: 100%;
+  
+      margin-top: 22px;
+  
+      font-size: 0.98rem;
+      line-height: 1.75;
+  
+      color: #95a4c1;
+    }
+  
+  
+    /* ---------- BADGES ---------- */
+  
+    .home-page .showcase.alternate .stat-chips {
+      width: 100%;
+  
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+  
+      gap: 10px;
+  
+      margin-top: 26px;
+    }
+  
+    .home-page .showcase.alternate .stat-chips span {
+      width: 100%;
+  
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      min-height: 52px;
+  
+      padding: 11px 10px;
+  
+      border-radius: 15px;
+  
+      font-size: 0.82rem;
+  
+      white-space: nowrap;
+    }
+  
+  
+    /* ---------- TÉLÉPHONE ---------- */
+  
+    .home-page .showcase.alternate .screenshot-stage {
+      width: 100%;
+  
+      min-height: 485px;
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .home-page .showcase.alternate .phone-large {
+      width: 230px;
+      max-width: 68vw;
+  
       margin: 0 auto;
     }
   
-    .home-page .showcase.alternate .showcase-copy h2,
-    .home-page .showcase.alternate .showcase-copy > p,
-    .home-page .showcase.alternate .eyebrow {
-      max-width: 100%;
-    }
-  
-    .home-page .showcase.alternate .stat-chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
+    .home-page .showcase.alternate .screen-glow {
+      width: 250px;
+      height: 250px;
     }
   }
   
+  
+  /* =====================================================
+     PETITS TÉLÉPHONES
+     ===================================================== */
+  
   @media (max-width: 380px) {
+  
     .home-page .showcase.alternate .container {
       width: calc(100% - 20px);
+    }
+  
+    .home-page .showcase.alternate .showcase-copy h2 {
+      font-size: 2.45rem;
+    }
+  
+    .home-page .showcase.alternate .stat-chips {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+  
+    .home-page .showcase.alternate .stat-chips span {
+      font-size: 0.75rem;
+      padding: 10px 7px;
+    }
+  
+    .home-page .showcase.alternate .phone-large {
+      width: 210px;
     }
   }
