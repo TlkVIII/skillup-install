@@ -1,42 +1,153 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SkillUp — Installer sur iPhone</title><link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#07101f" />
+  <title>SkillUp — Installer sur iPhone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header><a class="brand" href="index.html">SkillUp</a><a href="index.html">Accueil</a></header>
-<main>
-<section class="page-hero"><span class="pill">iPhone · installation privée</span><h1>Installer SkillUp sur iPhone</h1>
-<p>Une installation initiale sur Windows, puis Sideloadly peut renouveler automatiquement l'application lorsque ton PC et ton iPhone peuvent communiquer.</p>
-<div class="actions"><a class="btn primary" href="SkillUp-unsigned.ipa" download>Télécharger SkillUp (.ipa)</a><a class="btn" href="https://sideloadly.io/" target="_blank" rel="noopener">Télécharger Sideloadly</a></div>
-<p class="small">Place <code>SkillUp-unsigned.ipa</code> dans le même dossier que cette page pour activer le bouton.</p>
-</section>
+  <div class="page-noise"></div>
 
-<section class="section"><span class="eyebrow">Étapes</span><h2>Installation</h2>
-<div class="grid">
-<article class="step"><b>01</b><h3>Installe Sideloadly</h3><p>Installe Sideloadly sur ton PC Windows.</p></article>
-<article class="step"><b>02</b><h3>Branche ton iPhone</h3><p>Déverrouille-le et accepte « Faire confiance » si demandé.</p></article>
-<article class="step"><b>03</b><h3>Ajoute SkillUp</h3><p>Glisse le fichier IPA dans Sideloadly, choisis ton iPhone et utilise ton propre Apple ID.</p></article>
-<article class="step"><b>04</b><h3>Lance l'installation</h3><p>Clique sur Start. SkillUp apparaîtra sur l'écran d'accueil.</p></article>
-</div></section>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img src="assets/logo-skillup.png" alt="Logo SkillUp" />
+        <span>SkillUp</span>
+      </a>
+      <a class="nav-cta" href="index.html">Retour au site</a>
+    </div>
+  </header>
 
-<section class="section"><span class="eyebrow">Après installation</span><h2>Autoriser l'app</h2>
-<div class="card column">
-<p><strong>1.</strong> Réglages → Général → VPN et gestion de l'appareil.</p>
-<p><strong>2.</strong> Sélectionne ton profil développeur.</p>
-<p><strong>3.</strong> Appuie sur Faire confiance.</p>
-<p><strong>4.</strong> Si demandé, active Mode développeur dans Confidentialité et sécurité.</p>
-</div></section>
+  <main>
+    <section class="ios-hero section-shell">
+      <div class="container ios-hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">GUIDE IPHONE</span>
+          <h1>SkillUp sur iPhone, <span class="gradient-text">sans App Store.</span></h1>
+          <p class="hero-text">
+            Suis les étapes ci-dessous pour installer l'application avec Sideloadly
+            et ton propre compte Apple.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://sideloadly.io/" target="_blank" rel="noopener noreferrer">
+              Télécharger Sideloadly
+            </a>
+            <a class="button button-ghost" href="#steps">Voir les étapes</a>
+          </div>
+        </div>
 
-<section class="section"><span class="eyebrow">Auto-refresh</span><h2>Éviter de recommencer chaque semaine</h2>
-<div class="card column">
-<p>Active le Sideloadly Daemon et son lancement avec Windows.</p>
-<p>Active la détection Wi‑Fi de l'iPhone si disponible.</p>
-<p>Allume régulièrement le PC et garde-le sur le même Wi‑Fi que l'iPhone pour permettre le renouvellement automatique.</p>
-</div></section>
+        <div class="ios-device reveal reveal-delay">
+          <div class="phone-frame phone-main">
+            <div class="phone-island"></div>
+            <img src="assets/screen-profile.jpg" alt="SkillUp sur iPhone" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section class="section"><div class="warning"><strong>Important :</strong> chacun doit utiliser son propre Apple ID. Ne partage jamais ton mot de passe Apple.</div></section>
-</main>
-<footer>SkillUp · Installation privée iPhone</footer>
-</body></html>
+    <section class="section-shell" id="steps">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">INSTALLATION</span>
+          <h2>Une seule configuration initiale.</h2>
+          <p>Ensuite, le rafraîchissement peut être automatisé lorsque ton PC et ton iPhone communiquent.</p>
+        </div>
+
+        <div class="steps-list">
+          <article class="install-step reveal">
+            <span class="install-number">01</span>
+            <div>
+              <h3>Installe Sideloadly sur Windows</h3>
+              <p>Télécharge Sideloadly depuis son site officiel puis termine l'installation.</p>
+            </div>
+          </article>
+
+          <article class="install-step reveal">
+            <span class="install-number">02</span>
+            <div>
+              <h3>Branche et autorise ton iPhone</h3>
+              <p>Déverrouille l'iPhone, branche-le en USB et accepte « Faire confiance à cet ordinateur ».</p>
+            </div>
+          </article>
+
+          <article class="install-step reveal">
+            <span class="install-number">03</span>
+            <div>
+              <h3>Ajoute le fichier SkillUp IPA</h3>
+              <p>
+                Télécharge le fichier IPA fourni par l'administrateur du groupe,
+                glisse-le dans Sideloadly, choisis ton iPhone puis saisis ton propre identifiant Apple.
+              </p>
+            </div>
+          </article>
+
+          <article class="install-step reveal">
+            <span class="install-number">04</span>
+            <div>
+              <h3>Autorise l'application sur l'iPhone</h3>
+              <p>
+                Va dans Réglages → Général → VPN et gestion de l'appareil, puis fais confiance
+                au profil développeur associé à ton compte.
+              </p>
+            </div>
+          </article>
+
+          <article class="install-step reveal">
+            <span class="install-number">05</span>
+            <div>
+              <h3>Active le mode développeur si nécessaire</h3>
+              <p>Réglages → Confidentialité et sécurité → Mode développeur, puis redémarre si l'iPhone le demande.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell">
+      <div class="container">
+        <div class="auto-refresh-card reveal">
+          <div>
+            <span class="eyebrow">AUTO-REFRESH</span>
+            <h2>Évite la réinstallation manuelle chaque semaine.</h2>
+            <p>
+              Laisse le Sideloadly Daemon actif sur Windows et autorise son lancement au démarrage.
+              Lorsque le PC est allumé et que l'iPhone est détectable, Sideloadly peut renouveler la signature.
+            </p>
+          </div>
+          <div class="refresh-checks">
+            <span>✓ Daemon actif</span>
+            <span>✓ Lancement avec Windows</span>
+            <span>✓ Même réseau Wi‑Fi</span>
+            <span>✓ PC allumé régulièrement</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell">
+      <div class="container warning-box reveal">
+        <strong>Important</strong>
+        <p>Chaque personne doit utiliser son propre identifiant Apple. Ne partage jamais ton mot de passe Apple avec quelqu'un d'autre.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="index.html">
+        <img src="assets/logo-skillup.png" alt="" />
+        <span>SkillUp</span>
+      </a>
+      <p>Guide iPhone</p>
+      <span class="footer-note">Installation privée / groupe de test</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

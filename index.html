@@ -1,21 +1,263 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SkillUp — Installation</title><link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#07101f" />
+  <meta name="description" content="SkillUp — apprends, progresse, relève des défis et gagne de l'XP." />
+  <title>SkillUp — Apprends. Progresse. Débloque.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header><a class="brand" href="index.html">SkillUp</a><a href="ios.html">Installer sur iPhone</a></header>
-<main>
-<section class="hero">
-<div><span class="pill">Installation simple</span><h1>Installe SkillUp sur ton téléphone.</h1>
-<p>Choisis ton appareil et suis les étapes. Sur iPhone, l'installation se fait avec Sideloadly et ton propre compte Apple.</p>
-<div class="actions"><a class="btn primary" href="ios.html">Installer sur iPhone</a><a class="btn" href="#android">Android</a></div></div>
-<div class="mock"><div class="icon">S</div><h2>SkillUp</h2><p>Apprends. Progresse. Débloque.</p></div>
-</section>
-<section id="android" class="section"><span class="eyebrow">Android</span><h2>Déjà disponible</h2>
-<div class="card"><div><h3>Installer sur Android</h3><p>Remplace ce bouton par ton lien Google Play ou ton APK.</p></div><a class="btn disabled" href="#">Lien Android à ajouter</a></div>
-</section>
-</main>
-<footer>SkillUp · Installation privée</footer>
-</body></html>
+  <div class="page-noise"></div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Accueil SkillUp">
+        <img src="assets/logo-skillup.png" alt="Logo SkillUp" />
+        <span>SkillUp</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navigation principale">
+        <a href="#features">Fonctionnalités</a>
+        <a href="#preview">Aperçu</a>
+        <a href="#download">Télécharger</a>
+      </nav>
+
+      <a class="nav-cta" href="#download">Installer</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">APPRENDRE • PROGRESSER • DÉBLOQUER</span>
+          <h1>
+            Passe au niveau
+            <span class="gradient-text">supérieur.</span>
+          </h1>
+          <p class="hero-text">
+            SkillUp transforme ton apprentissage en progression concrète :
+            leçons guidées, quiz, exercices, défis quotidiens, badges et XP.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#download">
+              Télécharger SkillUp
+            </a>
+            <a class="button button-ghost" href="#preview">
+              Voir l'application
+            </a>
+          </div>
+
+          <div class="hero-points">
+            <span><i></i> Gratuit</span>
+            <span><i></i> Android & iPhone</span>
+            <span><i></i> Progression synchronisée</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-delay">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+
+          <div class="phone-stack">
+            <div class="phone-frame phone-main">
+              <div class="phone-island"></div>
+              <img src="assets/screen-home.jpg" alt="Écran d'accueil SkillUp avec niveau, XP et défis" />
+            </div>
+
+            <div class="floating-card xp-card">
+              <span>XP gagné</span>
+              <strong>+260 XP</strong>
+              <small>Bonus du jour</small>
+            </div>
+
+            <div class="floating-card streak-card">
+              <span>Série</span>
+              <strong>🔥 7 jours</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="metrics">
+      <div class="container metrics-grid reveal">
+        <div>
+          <strong>XP</strong>
+          <span>Progresse à ton rythme</span>
+        </div>
+        <div>
+          <strong>Défis</strong>
+          <span>De nouveaux objectifs chaque jour</span>
+        </div>
+        <div>
+          <strong>Badges</strong>
+          <span>Récompense tes progrès</span>
+        </div>
+        <div>
+          <strong>Stats</strong>
+          <span>Suis ton évolution</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell" id="features">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">PENSÉ POUR TE FAIRE AVANCER</span>
+          <h2>Une expérience d'apprentissage qui ressemble à un jeu.</h2>
+          <p>
+            Pas de cours interminables : SkillUp te donne des objectifs clairs,
+            visibles et motivants.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card reveal">
+            <span class="feature-icon">📚</span>
+            <h3>Leçons guidées</h3>
+            <p>Apprends étape par étape avec des contenus organisés par compétence.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <span class="feature-icon">🎯</span>
+            <h3>Quiz & pratique</h3>
+            <p>Teste immédiatement ce que tu viens d'apprendre et consolide tes acquis.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <span class="feature-icon">🔥</span>
+            <h3>Défis quotidiens</h3>
+            <p>Reviens chaque jour, complète tes objectifs et gagne de l'XP bonus.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <span class="feature-icon">🏅</span>
+            <h3>Badges & progression</h3>
+            <p>Débloque des récompenses et visualise ton évolution dans le temps.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell showcase" id="preview">
+      <div class="container showcase-grid">
+        <div class="showcase-copy reveal">
+          <span class="eyebrow">TON TABLEAU DE BORD</span>
+          <h2>Tout ce qui compte, visible en un coup d'œil.</h2>
+          <p>
+            Niveau, XP, quota quotidien et défis : tu sais toujours où tu en es
+            et quel est ton prochain objectif.
+          </p>
+
+          <div class="mini-list">
+            <div><span>01</span><p>Observe ton niveau et ta progression XP.</p></div>
+            <div><span>02</span><p>Complète les défis du jour pour gagner des bonus.</p></div>
+            <div><span>03</span><p>Enchaîne les activités et construis ta série.</p></div>
+          </div>
+        </div>
+
+        <div class="screenshot-stage reveal">
+          <div class="screen-glow"></div>
+          <div class="phone-frame phone-large">
+            <div class="phone-island"></div>
+            <img src="assets/screen-home.jpg" alt="Tableau de bord SkillUp" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell showcase alternate">
+      <div class="container showcase-grid reverse">
+        <div class="screenshot-stage reveal">
+          <div class="screen-glow purple"></div>
+          <div class="phone-frame phone-large">
+            <div class="phone-island"></div>
+            <img src="assets/screen-profile.jpg" alt="Profil et statistiques SkillUp" />
+          </div>
+        </div>
+
+        <div class="showcase-copy reveal">
+          <span class="eyebrow">TES STATISTIQUES</span>
+          <h2>Regarde concrètement tes efforts s'accumuler.</h2>
+          <p>
+            Consulte ton XP, tes quiz terminés, ta série et ta progression sur
+            plusieurs jours. Ton profil devient le reflet de ton travail.
+          </p>
+
+          <div class="stat-chips">
+            <span>🔥 Série</span>
+            <span>⭐ XP</span>
+            <span>📚 Niveaux</span>
+            <span>🧠 Quiz</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell download-section" id="download">
+      <div class="container">
+        <div class="download-card reveal">
+          <div class="download-top">
+            <div>
+              <span class="eyebrow">PRÊT À COMMENCER ?</span>
+              <h2>Installe SkillUp.</h2>
+              <p>Choisis ton appareil. L'application Android est disponible directement.</p>
+            </div>
+            <img class="download-logo" src="assets/logo-skillup.png" alt="" />
+          </div>
+
+          <div class="download-grid">
+            <article class="platform-card">
+              <div class="platform-head">
+                <span class="platform-icon">🤖</span>
+                <div>
+                  <small>ANDROID</small>
+                  <h3>Téléchargement direct</h3>
+                </div>
+              </div>
+              <p>Télécharge l'APK, ouvre-le sur ton téléphone puis autorise l'installation si Android te le demande.</p>
+              <a class="button button-primary full" href="files/SkillUp-Android.apk" download>
+                Télécharger l'APK
+              </a>
+            </article>
+
+            <article class="platform-card">
+              <div class="platform-head">
+                <span class="platform-icon"></span>
+                <div>
+                  <small>IPHONE</small>
+                  <h3>Installation guidée</h3>
+                </div>
+              </div>
+              <p>Sur iPhone, suis notre guide Sideloadly pour installer l'application avec ton propre identifiant Apple.</p>
+              <a class="button button-ghost full" href="ios.html">
+                Voir le guide iPhone
+              </a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="#top">
+        <img src="assets/logo-skillup.png" alt="" />
+        <span>SkillUp</span>
+      </a>
+      <p>Apprends. Progresse. Débloque.</p>
+      <span class="footer-note">Installation privée / groupe de test</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
